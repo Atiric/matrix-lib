@@ -75,6 +75,9 @@ public abstract class AbstractMatrix implements IMatrix {
 		return result;
 	}
 
+	/**
+	 * Not working yet
+	 */
 	@Override
 	public double determinant() {
 		return 0d;
@@ -227,7 +230,6 @@ public abstract class AbstractMatrix implements IMatrix {
 //			throw new IllegalArgumentException(
 //					"Given parameter matrix b is not a column  vector");			
 //		}
-		//TODO 5 zadatak nesto tu zajebava
 		int rows = this.getRowsCount();
 		int cols = this.getColsCount();
 

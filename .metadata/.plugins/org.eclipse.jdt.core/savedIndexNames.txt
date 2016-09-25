@@ -1,0 +1,19 @@
+INDEX VERSION 1.127+F:\FER\github\matrix-lib\.metadata\.plugins\org.eclipse.jdt.core
+2947788220.index
+4112017558.index
+3241466435.index
+3952141166.index
+1771911503.index
+1674197738.index
+3501601504.index
+2307518581.index
+1985382377.index
+1857899436.index
+904440426.index
+2402860540.index
+315585559.index
+3414388786.index
+262322381.index
+3158068371.index
+1067844104.index
+4232631194.index

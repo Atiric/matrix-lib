@@ -281,41 +281,7 @@ public class AbstractMatrixTest{
 			subMatrix.set(0, 0, -2);
 			Assert.assertTrue(Math.abs(testMatrix.get(0, 0) - (-2))<0.0001);
 		}
-		
-		@Test
-		public void subMatrixLiveViewFalseTest(){
-			IMatrix subMatrix = testMatrix.subMatrix(3, 3, false);
-			Assert.assertEquals(3, subMatrix.getRowsCount());
-			Assert.assertEquals(3, subMatrix.getColsCount());
-			
-			subMatrix.set(0, 0, -2);
-			Assert.assertTrue(Math.abs(testMatrix.get(0, 0) - 0)<0.0001);
-		}
-		
-		@Test(expected=UnsupportedOperationException.class)
-		public void nInvertFailsTest(){
-			double[][] elements = {{1,2},{1,2}};
-			Matrix matrix = new Matrix(elements, 2, 2, false);
-			matrix.nInvert();
-			
-		}
-		
-		@Test
-		public void nInvertTest(){
-			double[][] elements = {{4,4,4},{12,6,8}, {2,7,99}};
-			Matrix matrix = new Matrix(elements, 3, 3, false);
-			IMatrix inverted= matrix.nInvert();
-
-			Assert.assertTrue(Math.abs(inverted.get(0, 0) - (-0.2393))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(0, 1) - 0.1637)<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(0, 2) - (-0.0036))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(1, 0) - 0.5214)<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(1, 1) - (-0.1726))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(1, 2) - (-0.0071))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(2, 0) - (-0.0320))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(2, 1) - (-0.0089))<0.0001);
-			Assert.assertTrue(Math.abs(inverted.get(2, 2) - 0.0107)<0.0001);
-		}
+	
 		
 		@Test
 		public void toArrayTest(){
